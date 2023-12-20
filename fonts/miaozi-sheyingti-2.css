@@ -1,4 +1,6 @@
 @font-face {
     font-family: 'MiaoZiGuan';
-    src: url("miaozi-sheyingti-2.ttf")format("truetype");
+    font-style: normal;
+    font-display: swap;
+    src: url("miaozi-sheyingti-2.ttf") format("truetype");
 }
