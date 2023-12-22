@@ -3,7 +3,7 @@ body {
     padding: 0;
     color: #222222;
     background-color: #000;
-    font-family: MiaoZiGuan, serif;
+    font-size: 18px;
 }
 
 #bg-image{
@@ -16,7 +16,7 @@ body {
     background-size:cover;
 }
 
-#nav-left {
+.home-nav-left {
     width: 300px;
     height: calc(100% - 60px);
     background-color: rgba(255, 255, 255, 0.45);
@@ -25,6 +25,64 @@ body {
     left: 30px;
     backdrop-filter: blur(10px);
     border-radius: 24px;
+}
+
+.head-img {
+    width: 128px;
+    margin: 30px auto 10px;
+    display: block;
+
+}
+
+.username {
+    padding: 0 36px;
+}
+
+.my-say {
+    text-align: center;
+    user-select: none;
+    height: 30px;
+}
+
+.home-nav-left ul {
+    padding: 25px;
+}
+
+.home-nav-left ul li {
+    width: 210px;
+    height: 26px;
+    margin: 6px 0;
+    border-radius: 10px;
+    background-color: #ffffff30;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.home-nav-left ul li::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 18px;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    border-radius: 4px;
+    background-color: #09f;
+    transition: all 0.3s;
+}
+@keyframes ul-li-hover {
+    from{
+        width: 0;
+    }
+    to {
+        width: 18px;
+    }
+}
+.home-nav-left ul li:hover::before {
+    width: 4px;
+    animation: ul-li-hover ;
 }
 
 #main-right {
@@ -36,22 +94,4 @@ body {
     right: 30px;
     backdrop-filter: blur(10px);
     border-radius: 24px;
-}
-
-.head-img {
-    width: 128px;
-    margin: 30px auto 20px;
-    display: block;
-
-}
-
-.username {
-    padding: 0 36px;
-}
-
-.my-say {
-    text-align: center;
-    font-size: 16px;
-    user-select: none;
-    height: 30px;
 }
